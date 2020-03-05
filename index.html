@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency calculator</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header class="header clearfix">
+        <h1>Currency calculator</h1>
+        <img src="img/logo.jpg" alt="Currency calculator">
+    </header>
+
+    <section class="average clearfix">
+        <p class="rates">Average currency rates</p>
+        <div class="curContainer clearfix">
+            <div class="cur">
+                <p>GBP</p>
+                <p class="cgbp">5.0709</p>
+            </div>
+            <div class="cur">
+                <p>EUR</p>
+                <p class="ceur">4.2679</p>
+            </div>
+            <div class="cur">
+                <p>CHF</p>
+                <p class="cchf">3.9915</p>
+            </div>
+            <div class="cur">
+                <p>USD</p>
+                <p class="cusd">3.8725</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="selection">
+        <div class="formular center">
+            <form>
+                <label for="currency_select">Choose your currency:
+                    <select name="currencyOptions" class="currencyOptions">
+                        <option id="v_gbp" value="GBP">GBP</option>
+                        <option id="v_eur" value="EUR">EUR</option>
+                        <option id="v_chf" value="CHF">CHF</option>
+                        <option id="v_usd" value="USD">USD</option>
+                        <option id="v_pln" value="PLN">PLN</option>
+                    </select>
+                </label>
+                <label for="Value">Value:
+                    <input type="number" class="c_value" value="0" min="0">
+                </label>
+                <div class="center">
+                    <button class="calculateValue">Calculate</button>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+    <section class="results">
+        <div class="resContainer clearfix">
+            <p class="calculatedCurrencies">
+                Calculated currencies:
+            </p>
+            <div class="cur_res">
+                <p>GBP</p>
+                <p class="vc_gbp">0</p>
+            </div>
+            <div class="cur_res">
+                <p>EUR</p>
+                <p class="vc_eur">0</p>
+            </div>
+            <div class="cur_res">
+                <p>CHF</p>
+                <p class="vc_chf">0</p>
+            </div>
+            <div class="cur_res">
+                <p>USD</p>
+                <p class="vc_usd">0</p>
+            </div>
+            <div class="cur_res">
+                <p>PLN</p>
+                <p class="vc_pln">0</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="author">&copy; marcin p., 2020</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
